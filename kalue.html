@@ -55,7 +55,20 @@
     #startupScreen { position:fixed; inset:0; background:var(--bg-deep); display:flex; flex-direction:column; align-items:center; justify-content:center; z-index:9999; transition:opacity .8s ease; }
     .startup-burst { font-size:5rem; animation:burstPop 1s ease infinite alternate; filter:drop-shadow(0 0 30px var(--fire)); }
     @keyframes burstPop { 0% { transform:scale(1) rotate(-5deg); } 100% { transform:scale(1.12) rotate(5deg); } }
-    .startup-name { font-family:var(--font-head); font-size:2.4rem; font-weight:800; letter-spacing:.08em; background:linear-gradient(135deg, var(--fire), var(--gold), var(--spark)); -webkit-background-clip:text; background-clip:text; color:transparent; margin:18px 0 6px; }
+    .startup-name { 
+  font-family:var(--font-head); 
+  font-size:2.4rem; 
+  font-weight:800; 
+  letter-spacing:.08em; 
+  background:linear-gradient(135deg, var(--fire), var(--gold), var(--spark)); 
+  -webkit-background-clip:text; 
+  background-clip:text; 
+  color:transparent; 
+  margin:18px 0 6px;
+  text-align: center;
+  word-break: break-word;
+  white-space: normal;
+}
     .startup-sub { color:var(--text-muted); font-size:.9rem; letter-spacing:.14em; text-transform:uppercase; margin-bottom:32px; }
     .loading-track { width:280px; height:3px; background:rgba(255,255,255,.07); border-radius:4px; overflow:hidden; }
     .loading-fill  { height:100%; background:linear-gradient(90deg, var(--fire), var(--gold)); animation:loadFill 2.8s ease forwards; width:0; }
